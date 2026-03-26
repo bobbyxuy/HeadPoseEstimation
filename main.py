@@ -282,7 +282,7 @@ def main(params):
 
     start_epoch = 0
     if params.checkpoint and os.path.isfile(params.checkpoint):
-        ckpt = torch.load(params.checkpoint, map_location=device, weights_only=True)
+        ckpt = torch.load(params.checkpoint, map_location=device, weights_only=False)
 
         model_without_ddp.load_state_dict(ckpt['model'])
         optimizer.load_state_dict(ckpt['optimizer'])
