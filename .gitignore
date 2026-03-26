@@ -168,3 +168,4 @@ cython_debug/
 #.idea/
 # logs
 *.log
+weights/mobilenetv4_conv_large_pretrained.pth
