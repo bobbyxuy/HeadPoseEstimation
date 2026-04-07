@@ -2,6 +2,7 @@ data/300W_LP
 data/AFLW2000
 output*/
 *.pt
+*.pth
 # Only upload best checkpoints, skip last/oversized
 weights/mobilenetv4_medium_pretrained/last_checkpoint.ckpt
 weights/mobilenetv2/last_checkpoint.ckpt
