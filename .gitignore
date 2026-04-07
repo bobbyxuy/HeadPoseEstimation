@@ -1,8 +1,17 @@
 data/300W_LP
 data/AFLW2000
 output*/
-*.ckpt
 *.pt
+# Only upload best checkpoints, skip last/oversized
+weights/mobilenetv4_medium_pretrained/last_checkpoint.ckpt
+weights/mobilenetv2/last_checkpoint.ckpt
+weights/mobilenetv4_medium/last_checkpoint.ckpt
+weights/mobilenetv4_small/last_checkpoint.ckpt
+weights/mobilenetv4_small_pretrained/last_checkpoint.ckpt
+weights/whenet/last_checkpoint.ckpt
+# Oversized (>100MB, can't push to GitHub)
+weights/mobilenetv4_large_pretrained/
+weights/mobilenetv4_hybrid_medium_pretrained/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
