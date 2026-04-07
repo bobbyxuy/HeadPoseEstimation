@@ -1,6 +1,6 @@
 data/300W_LP
 data/AFLW2000
-output/
+output*/
 *.ckpt
 *.pt
 
